@@ -1,12 +1,12 @@
 import { useMemo } from 'react';
 import {
-  Bell, AlertTriangle, AlertCircle, Info, Check, Clock,
+  Bell, AlertTriangle, AlertCircle, Info, Check,
   FileWarning, CalendarClock, FileText, ShieldAlert, RefreshCw, CheckCheck,
 } from 'lucide-react';
 import { useStore } from '@/lib/store';
 import { useRouter } from '@/lib/router';
 import { Card, PageHeader, Badge, Button, EmptyState, formatDateTime } from '@/components/ui';
-import { SEVERITY_COLORS, SEVERITY_DOT } from '@/lib/constants';
+import { SEVERITY_COLORS } from '@/lib/constants';
 import type { AlertType, AlertSeverity } from '@/types';
 
 const ALERT_ICONS: Record<AlertType, typeof Bell> = {

@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 import {
-  Search, Upload, FileWarning, FileCheck2, FileX2, Clock, Filter, Download,
+  Search, Upload, FileWarning, FileCheck2, FileX2, Clock, Download,
 } from 'lucide-react';
 import { useStore } from '@/lib/store';
 import { Card, PageHeader, Badge, Button, Modal, Field, inputClass, formatDate, daysUntil, downloadCSV, EmptyState } from '@/components/ui';

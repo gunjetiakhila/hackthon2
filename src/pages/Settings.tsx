@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import {
-  Settings as SettingsIcon, Workflow, Clock, Bell, Save, RotateCcw,
+  Workflow, Clock, Bell, Save, RotateCcw,
   Building2, Plus, ShieldAlert, Info,
 } from 'lucide-react';
 import { useStore } from '@/lib/store';
-import { Card, PageHeader, Button, Field, inputClass, Badge, Modal } from '@/components/ui';
-import { DOC_TYPE_LABELS, ROLE_LABELS, STAGE_LABELS, STATES } from '@/lib/constants';
-import type { AppSettings, Role, DocumentType } from '@/types';
+import { Card, PageHeader, Button, Field, inputClass, Modal } from '@/components/ui';
+import { DOC_TYPE_LABELS, ROLE_LABELS, STATES } from '@/lib/constants';
+import type { AppSettings, DocumentType } from '@/types';
 
 export function SettingsPage() {
   const { settings, updateSettings, resetData, addInstitution, currentUser } = useStore();

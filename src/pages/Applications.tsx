@@ -25,7 +25,7 @@ export function ApplicationsPage() {
   if (param) {
     return <ApplicationDetail appId={param} onBack={() => navigate('applications')} />;
   }
-  return <ApplicationList apps={applications} institutions={institutions} role={currentUser?.role ?? 'officer'} institutionId={currentUser?.institutionId} onOpen={(id) => navigate('applications', id)} onNew={() => navigate('applications', 'new')} />;
+  return <ApplicationList apps={applications} role={currentUser?.role ?? 'officer'} institutionId={currentUser?.institutionId} onOpen={(id) => navigate('applications', id)} onNew={() => navigate('applications', 'new')} />;
 }
 
 function ApplicationList({ apps, role, institutionId, onOpen, onNew }: {

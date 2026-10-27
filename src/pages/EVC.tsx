@@ -1,8 +1,8 @@
 import { useMemo, useState } from 'react';
-import { CalendarClock, Plus, MapPin, Users, Clock, CheckCircle2, Calendar as CalIcon, FileText } from 'lucide-react';
+import { CalendarClock, Plus, MapPin, Users, CheckCircle2, Calendar as CalIcon, FileText } from 'lucide-react';
 import { useStore } from '@/lib/store';
 import { Card, PageHeader, Badge, Button, Modal, Field, inputClass, formatDate, daysUntil, EmptyState } from '@/components/ui';
-import { EVC_CHAIRS, OFFICERS, ROLE_LABELS } from '@/lib/constants';
+import { EVC_CHAIRS, OFFICERS } from '@/lib/constants';
 import type { EVCVisit } from '@/types';
 
 export function EVCPage() {

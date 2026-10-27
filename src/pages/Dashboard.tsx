@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
-  PieChart, Pie, Cell, AreaChart, Area, Legend,
+  PieChart, Pie, Cell, AreaChart, Area,
 } from 'recharts';
 import {
   FileText, Clock, CheckCircle2, AlertTriangle, TrendingUp,
@@ -13,7 +13,7 @@ import { Card, PageHeader, Badge, formatDate, daysUntil } from '@/components/ui'
 import {
   STATUS_LABELS, STATUS_COLORS, STATUS_DOT, ROLE_LABELS,
 } from '@/lib/constants';
-import type { ApplicationStatus, Role } from '@/types';
+import type { ApplicationStatus } from '@/types';
 
 const STATUS_CHART_COLORS: Record<ApplicationStatus, string> = {
   submitted: '#64748b',

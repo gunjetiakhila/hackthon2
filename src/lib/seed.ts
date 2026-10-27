@@ -3,7 +3,7 @@ import type {
   ComplianceItem, Alert, AuditEntry, User, AppSettings, WorkflowConfig,
   DocumentType, WorkflowStage, ApplicationEvent,
 } from '@/types';
-import { STATES, OFFICERS, EVC_CHAIRS, DOC_TYPE_LABELS } from './constants';
+import { OFFICERS, EVC_CHAIRS, DOC_TYPE_LABELS } from './constants';
 
 const INSTITUTION_NAMES = [
   ['St. Xavier Institute of Technology', 'Mumbai', 'Maharashtra', 'Engineering'],
@@ -132,7 +132,7 @@ export function generateSeed(): {
     const submittedDays = appStartDates[i];
     const submittedAt = daysAgo(submittedDays);
 
-    let currentStage: WorkflowStage = status;
+    const currentStage: WorkflowStage = status;
     let evcDate: string | null = null;
     let decisionDate: string | null = null;
     let progress = 25;

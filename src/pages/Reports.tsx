@@ -3,7 +3,7 @@ import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
   PieChart, Pie, Cell, LineChart, Line, Legend,
 } from 'recharts';
-import { Download, TrendingUp, FileText, Clock, CheckCircle2, XCircle } from 'lucide-react';
+import { Download, FileText, Clock, CheckCircle2, XCircle } from 'lucide-react';
 import { useStore } from '@/lib/store';
 import { Card, PageHeader, Button, downloadCSV } from '@/components/ui';
 import { STATUS_LABELS } from '@/lib/constants';
